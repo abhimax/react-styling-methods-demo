@@ -1,0 +1,21 @@
+.tag {
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #012d66;
+  color: white;
+  background: #012d66;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
+  cursor: pointer;
+  width: fit-content;
+}
+
+.tag:focus {
+  outline: none;
+}
+
+.tag:hover,
+.tag:active {
+  background: #0068c3;
+  border-color: #0068c3;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.26);
+}

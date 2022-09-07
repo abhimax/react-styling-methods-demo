@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Button from "../../UI/Button/Button";
+import ModuleTile from "../../UI/ModuleTile/ModuleTile";
+import Tag from "../../UI/Tag/Tag";
 import "./CourseInput.css";
 
 const FormControl = styled.div`
@@ -38,7 +40,7 @@ const FormControl = styled.div`
 `;
 
 const DynamicTile = styled.div`
-width: 140px;
+width: 100%;
 height: 140px;
 background-color: ${ props =>  props.invalid ? 'red' : 'green'};
 -webkit-align-content: center;
@@ -52,6 +54,9 @@ flex-direction: column;
 align-items: center;
 & h3{
   color: white;
+}
+@media ( min-width : 480px){
+  width: 140px;
 }
 `;
 
@@ -89,6 +94,8 @@ const CourseInput = (props) => {
         <h3>Test Styled Component</h3>
         <p>Dynamic props</p>
       </DynamicTile>
+      <Tag>CSS Module!</Tag>
+      <ModuleTile><p>CSS MODULE</p></ModuleTile>
     </>
   );
 };

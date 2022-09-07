@@ -1,0 +1,26 @@
+.module-tile {
+  width:auto;
+  height: 140px;
+  font: inherit;
+  padding: 0.5rem;
+  border: 1px solid #e75f04;
+  color: white;
+  background: #e75f04;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
+  cursor: pointer;
+}
+.module-tile p{
+  font-size: 2rem;
+}
+
+.module-tile:hover {
+  background: #fcd40c;
+  border-color: #fcd40c;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.26);
+}
+
+@media ( min-width : 480px){
+  .module-tile{ 
+    width: 140px;
+  } 
+}
